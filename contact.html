@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta name="description"
+        content="Formulario de contacto para estudiantes de 2DAW. Escríbenos para cualquier consulta o propuesta." />
+        <link rel="stylesheet" href="styles.css">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contacto Arnau & Alex",
+            "url": "http://127.0.0.1:5500/contact.html",
+            "description": "Formulario de contacto para estudiantes de 2DAW. Escríbenos para cualquier consulta o propuesta."
+        }
+        </script>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <h1>Contacto</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="aboutMe.html">Sobre nosotros</a></li>
+                    <li><a href="contact.html" aria-current="page">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section style="max-width:520px; margin:2rem auto;" class="section-contact panel">
+                <h2 style="margin-bottom:1rem;">Envíanos un mensaje</h2>
+                <p>¿Tienes alguna consulta, propuesta o quieres saber más sobre nosotros? Completa el formulario y te
+                    responderemos lo antes posible.</p>
+                <form action="/submit_contact" method="post"
+                    style="display:flex; flex-direction:column; gap:1.1rem; margin-top:1.2rem;">
+                    <div>
+                        <label for="name">Nombre</label><br>
+                        <input type="text" id="name" name="name" required
+                            style="width:100%; padding:.7rem; border-radius:8px; border:1px solid #ccc;">
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico</label><br>
+                        <input type="email" id="email" name="email" required
+                            style="width:100%; padding:.7rem; border-radius:8px; border:1px solid #ccc;">
+                    </div>
+                    <div>
+                        <label for="message">Mensaje</label><br>
+                        <textarea id="message" name="message" rows="4" required
+                            style="width:100%; padding:.7rem; border-radius:8px; border:1px solid #ccc;"></textarea>
+                    </div>
+                    <button type="submit" class="btn primario" style="width:100%;">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 - Contacto | Arnau Aumedes & Alex Ruiz</p>
+        </footer>
+    </body>
+</body>
+
+</html>

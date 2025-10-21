@@ -1,0 +1,9 @@
+# Permitir a todos los robots acceder a todo el sitio
+User-agent: *
+Disallow:
+
+# Bloquear la carpeta privada
+Disallow: /privado/
+
+# Permitir el acceso al sitemap para mejorar el SEO
+Sitemap: http://127.0.0.1:5500/sitemap.xml
